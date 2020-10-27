@@ -11,9 +11,10 @@ import { translations } from './gif_card_translations';
 
 const useStyles = createUseStyles(styles);
 
-const GifCardComponent = ({
+export const GifCard = ({
     name,
     gifUrl,
+                            gifUser,
     imageEditable,
     additionalActions,
     onImageEditClick,
@@ -58,6 +59,7 @@ const GifCardComponent = ({
                 <CardTopHalf
                     error={error}
                     gifUrl={gifUrl}
+                    gifUser={gifUser}
                     name={name}
                     onImageEditClick={onImageEditClick}
                     classes={classes}
@@ -87,7 +89,7 @@ const GifCardComponent = ({
     );
 };
 
-const CardTopHalf = ({ error, gifUrl, classes, name, onImageEditClick }) => {
+const CardTopHalf = ({ error, gifUrl,gifUser classes, name, onImageEditClick }) => {
     if (!gifUrl) {
         return (
             <div className={classes.addGifButtonContainer}>
@@ -112,8 +114,9 @@ const CardTopHalf = ({ error, gifUrl, classes, name, onImageEditClick }) => {
                 </Typography>
             )}
             <img className={classes.image} src={gifUrl} alt={name} />
+            {gifUser && <a href={gifUser.profileUrl}>
+                <FormattedMessage id="GifsEditDialog.gifCard.gifAuthor" defaultMessage="Gif by {authorName}" values={{authorName: gifUser.name}}/>
+            </a>}
         </div>
     );
 };
-
-export const GifCard = GifCardComponent;

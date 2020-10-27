@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import { createUseStyles } from 'react-jss';
 import { useDebounce } from 'use-debounce';
 
-import { Dialog, DialogActions, DialogContent } from '@material-ui/core';
+import { Dialog, DialogActions, DialogContent, DialogProps } from '@material-ui/core';
 import { Button, TextField, Tooltip, Typography } from '@welovedevs/ui';
 
 import { DialogTitle } from '../dialog/dialog_title/dialog_title';
@@ -15,8 +15,19 @@ import { styles } from './search_gifs_dialog_styles';
 
 const useStyles = createUseStyles(styles);
 
-const SearchGifsDialogComponent = ({ open, onClose, onSelect }) => {
-    const classes = useStyles();
+type GiphySearchResult = {
+    id: string;
+    url: string;
+    title: string;
+    user?: {
+        name: string;
+        profileUrl: string;
+    };
+};
+const SearchGifsDialogComponent: React.FC<
+    { onSelect: (payload: GiphySearchResult & { query: string }) => any } & DialogProps
+> = ({ open, onClose, onSelect }) => {
+    const classes: any = useStyles();
     const [query, setQuery] = useState('');
     const [debouncedQuery] = useDebounce(query, 500);
 
@@ -60,7 +71,12 @@ const SearchGifsDialogComponent = ({ open, onClose, onSelect }) => {
     );
 };
 
-const Results = ({ query, debouncedQuery, onSelect, classes }) => {
+const Results: React.FC<{
+    query: string;
+    debouncedQuery: string;
+    onSelect: (payload: GiphySearchResult & { query: string }) => any;
+    classes: any;
+}> = ({ query, debouncedQuery, onSelect, classes }) => {
     const { gifs, loading: loadingResults } = useGiphyResults(debouncedQuery, 0, 3 * 3);
 
     const loading = useMemo(() => loadingResults || (query && query !== debouncedQuery), [
@@ -70,11 +86,11 @@ const Results = ({ query, debouncedQuery, onSelect, classes }) => {
     ]);
 
     const handleClick = useCallback(
-        (url, id, title) => () => {
+        (result: GiphySearchResult) => () => {
             if (typeof onSelect !== 'function') {
                 return;
             }
-            onSelect({ url, id, title, query });
+            onSelect({ ...result, query });
         },
         [onSelect, query]
     );
@@ -85,15 +101,15 @@ const Results = ({ query, debouncedQuery, onSelect, classes }) => {
             {!loading &&
                 gifs &&
                 debouncedQuery &&
-                gifs.map(({ id, url, title }) => (
-                    <Tooltip key={`giphy_item_${id}`} title="Select this gif">
+                gifs.map((payload) => (
+                    <Tooltip key={`giphy_item_${payload.id}`} title="Select this gif">
                         <button
-                            key={`result_${id}`}
+                            key={`result_${payload.id}`}
                             type="button"
                             className={classes.imageContainer}
-                            onClick={handleClick(url, id, title)}
+                            onClick={handleClick(payload)}
                         >
-                            <img className={classes.image} src={url} alt={title} />
+                            <img className={classes.image} src={payload.url} alt={payload.title} />
                         </button>
                     </Tooltip>
                 ))}

@@ -79,6 +79,7 @@ const SortableGifItem = SortableElement(
                 <GifCard
                     imageEditable
                     gifUrl={interest?.gifUrl}
+                    gifUser={interest?.user}
                     name={interest?.name}
                     onChange={handleChange}
                     onRemove={handleRemove}
