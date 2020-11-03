@@ -1,26 +1,21 @@
 {
     "basics": {
-        "name": "John Doe",
-        "label": "Programmer",
-        "picture": "",
+        "name": "Mohammad Shbool",
+        "label": "Software Engineer",
+        "picture": "https://avatars0.githubusercontent.com/u/29310322?s=460&u=68af5834f534787b5732024b64b59b32b892f061&v=4",
         "email": "john.doe@mail.com",
         "phone": "(912) 555-4321",
         "website": "http://johndoe.com",
-        "summary": "A summary of John Doe...",
+        "summary": "I'm a self-taught software engineer",
         "location": {
             "address": "2712 Broadway St",
             "postalCode": "CA 94115",
-            "city": "San Francisco",
+            "city": "San Francisco, US, US, US",
             "countryCode": "US",
-            "region": "California"
+            "region": "California",
+            "name": "San Francisco, US, US, US"
         },
-        "profiles": [
-            {
-                "network": "Twitter",
-                "username": "john",
-                "url": "http://twitter.com/john"
-            }
-        ]
+        "profiles": [{ "network": "Twitter", "username": "john", "url": "http://twitter.com/john" }]
     },
     "work": [
         {
@@ -81,14 +76,7 @@
             "courses": ["DB1101 - Basic SQL"]
         }
     ],
-    "awards": [
-        {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
-        }
-    ],
+    "awards": [{ "title": "Award", "date": "2014-11-01", "awarder": "Company", "summary": "There is no spoon." }],
     "publications": [
         {
             "name": "Publication",
@@ -99,142 +87,74 @@
         }
     ],
     "skills": [
-        {
-            "name": "Reactaaa",
-            "level": "Master",
-            "value": 100,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "Angular",
-            "level": "Master",
-            "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "NodeJS",
-            "level": "Master",
-            "value": 40,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "Firebase",
-            "level": "Master",
-            "value": 60,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "Gmail",
-            "level": "Master",
-            "value": 20,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        },
-        {
-            "name": "K8S",
-            "level": "Master",
-            "value": 80,
-            "keywords": ["HTML", "CSS", "Javascript"]
-        }
+        { "name": "Reactaaa", "level": "Master", "value": 100, "keywords": ["HTML", "CSS", "Javascript"] },
+        { "name": "Angular", "level": "Master", "value": 80, "keywords": ["HTML", "CSS", "Javascript"] },
+        { "name": "NodeJS", "level": "Master", "value": 40, "keywords": ["HTML", "CSS", "Javascript"] },
+        { "name": "Firebase", "level": "Master", "value": 60, "keywords": ["HTML", "CSS", "Javascript"] },
+        { "name": "Gmail", "level": "Master", "value": 20, "keywords": ["HTML", "CSS", "Javascript"] },
+        { "name": "K8S", "level": "Master", "value": 80, "keywords": ["HTML", "CSS", "Javascript"] }
     ],
     "languages": [{ "language": "English", "value": 100, "fluency": "Native speaker" }],
     "interests": [
-        {
-            "name": "Burritos",
-            "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif"
-        },
-        {
-            "name": "Dogs",
-            "gifUrl": "https://media.giphy.com/media/3o85xsGXVuYh8lM3EQ/giphy.gif"
-        },
-        {
-            "name": "Tendresse",
-            "gifUrl": "https://media.giphy.com/media/EehnUUCH2JcwU/giphy.gif"
-        },
-        {
-            "name": "Something",
-            "gifUrl": "https://media.giphy.com/media/xTiTnIuKP1BLsMTerS/giphy.gif"
-        },
-        {
-            "name": "J'aime faire de la course à pied et des randonnées en famille le weekend."
-        }
+        { "name": "Burritos", "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif" },
+        { "name": "Dogs", "gifUrl": "https://media.giphy.com/media/3o85xsGXVuYh8lM3EQ/giphy.gif" },
+        { "name": "Tendresse", "gifUrl": "https://media.giphy.com/media/EehnUUCH2JcwU/giphy.gif" },
+        { "name": "Something", "gifUrl": "https://media.giphy.com/media/xTiTnIuKP1BLsMTerS/giphy.gif" },
+        { "name": "J'aime faire de la course à pied et des randonnées en famille le weekend." }
     ],
     "references": [{ "name": "Jane Doe", "reference": "Reference..." }],
     "projects": [
         {
-            "index": 5,
-            "date": { "month": 11, "year": 2019 },
-            "description": "Moteur de recherche via le nom de films réalisée avec ReactJs:\nRequête à l'Api rest avec Fetch, utilisation des hooks.\n",
-            "id": "7f1f4257-e5db-477d-aa5f-ababe0ab0b12",
-            "images": [{ "url": "https://cdn.filestackcontent.com/aBOkTTkCQ66VOHUy0q8L" }],
-            "link": "https://lovely-movie.netlify.app/",
-            "name": "Lovely Movie",
-            "endDate": "2019-12-01"
+            "description": "Learn Quran is a hybrid platform for testing your knowledge in the Holy Quran!\n\n• Full-integration with Firebase’s Authentication, Database and Media Storage\n• Setup hosting on Firebase using FirebaseApp\n• Designed a responsive front-end using SASS inherited from Google’s Material Design\n• Collaborated with a UI/UX Engineer to deliver the best user experience\n• Built a smooth native-like animation system using Airbnb’s Lottie",
+            "name": "Learn Quran",
+            "date": "2019-05-02T21:00:00.000Z",
+            "link": "https://github.com/learn-quran/learn-quran",
+            "images": [{ "url": "https://learn-quran.now.sh/banner.jpg" }],
+            "id": "9ae9b1ca-e27d-4842-8e13-ea2aa825bb9b",
+            "endDate": "2019-05-03",
+            "index": 0
         },
         {
-            "index": 2,
-            "date": { "month": 0, "year": 2020 },
-            "description": "Application de gestion de tâches réalisée avec ReactJs / Redux / Firebase :\nCréation de composants avec Styled Components, gestions de formulaires et validation des entrées, création d'une authentification, récupération / création / modification / suppression de tâches.",
-            "id": "af4181b1-8955-47fb-8dd9-17c6974335d3",
-            "images": [{ "url": "https://cdn.filestackcontent.com/G2CckiqvScC9tsrvHYg4" }],
-            "link": "https://diary-todo.netlify.app/",
-            "name": "Journal d'une Todo",
-            "endDate": "2020-01-01"
+            "name": "Make Life Easier",
+            "date": "2019-03-03T13:20:08.481Z",
+            "description": "A repository contains shell script files for Unix-based system that automate mundane processes. \n\n- android-emulator: allows you to run your Android Emulator (has to be already installed) without the need to open Android Studio every time you want to launch your emulator.\n- mongoexportdb: allows you to export a Mongo Database into a target directory with one simple command\n",
+            "link": "https://github.com/mohshbool/make-life-easier",
+            "images": [
+                {
+                    "url": "https://camo.githubusercontent.com/ac751278e70d490b5557efe25b286eb81bb15427/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f5846345a6c38346935624b416678315a6f722f67697068792e676966"
+                }
+            ],
+            "id": "18b63c49-ba59-477d-9039-3ea7a06d19f0",
+            "endDate": "2019-03-03",
+            "index": 1
         },
         {
-            "index": 4,
-            "date": { "month": 5, "year": 2020 },
-            "description": "Blog réalisé en Java JEE et Spring, avec création d'une base de données MySQL et connectée avec JDBC.",
-            "id": "af8c78c3-f7c6-4f3b-9c32-9d37a9032e14",
-            "images": [{ "url": "https://cdn.filestackcontent.com/rPp0wj4S2GhTr0qTcqOI" }],
-            "link": "https://btz-java-2003-pjt1-blog.javarover.wilders.dev/",
-            "name": "Charlie's Angels blog",
-            "endDate": "2020-06-01"
+            "name": "Click to Chat",
+            "date": "2019-04-02T21:00:00.000Z",
+            "description": "Click to Chat lets you send messages on WhatsApp without having to save the receiver's number!\n\n• Used the WhatsApp API to dynamically generate Open Chat links\n• Swift user-experience achieved using ReactJS and SASS\n• Recorded a stable 70 visits per day using Google Analytics",
+            "link": "https://ctc.now.sh",
+            "id": "3d496521-e25b-48a4-8339-82cc7d9f07e8",
+            "endDate": "2019-04-03",
+            "index": 2
         },
         {
-            "index": 3,
-            "date": { "month": 5, "year": 2020 },
-            "description": "** Pensée uniquement pour téléphone **\nApplication permettant de connaître la météo actuelle d'une ville. Réalisée afin de découvrir VueJs.",
-            "id": "c64e6ca1-6300-4d7f-a305-8cfb7c99a9e6",
-            "images": [{ "url": "https://cdn.filestackcontent.com/w5oskUihSiYCxekOn9Ba" }],
-            "link": "https://appli-meteo.netlify.app/",
-            "name": "Application Météo",
-            "endDate": "2020-06-01"
-        },
-        {
-            "index": 1,
-            "date": { "month": 7, "year": 2020 },
-            "description": "Premières armes avec Angular et Typescript :\nMise en place d'un environnement Angular, développement d'une authentification avec Firebase, gestion des formulaires, utilisation d'observable avec RxJs.\n",
-            "id": "d9f7ca32-a40a-418e-affb-317bfb4f520e",
-            "images": [{ "url": "https://cdn.filestackcontent.com/NVOhKNFQR9OQ3jtkIyHi" }],
-            "link": "https://my-connected-library.netlify.app/",
-            "name": "Librairie Connectée",
-            "endDate": "2020-08-01"
-        },
-        {
-            "index": 6,
-            "date": { "month": 4, "year": 2019 },
-            "description": "Moteur de recherche basé sur le jeu World of Warcraft, premiers pas avec ReatJs.\nRequête à l'API Raider.io avec Axios.",
-            "id": "dbe2a8d9-dd9d-443d-8ae4-7a8e0b7939f5",
-            "images": [{ "url": "https://cdn.filestackcontent.com/FSysoX0ATvqy2BFvLF21" }],
-            "link": "https://wow-search-engine.netlify.app/",
-            "name": "WoW Search",
-            "endDate": "2019-05-01"
-        },
-        {
-            "index": 0,
-            "date": { "month": 6, "year": 2020 },
-            "description": "Application réalisée en 24h (challenge de formation) avec Java JEE et Spring:\nGestion d’un CRUD, création d'une API Rest, ajout d'un environnement de production avec une base de données PostgreSQL hébergée sur Heroku.",
-            "id": "ffb8a4f2-24e6-44ef-bbe7-0593b86d40be",
-            "images": [{ "url": "https://cdn.filestackcontent.com/7XpHKtFTC2VynppurrK5" }],
-            "link": "https://your-todos-list.herokuapp.com/",
-            "name": "Your Todo List",
-            "endDate": "2020-07-01"
+            "name": "JIRA Task Reminder",
+            "description": "A chrome extension helps you not to forget tasks on \"In-Progress\" on the task-management platform JIRA.\n\n• Built a dynamic email notifier using Nodemailer\n• Utilized the Chrome Extension API to read a user’s page and its changes",
+            "date": "2019-06-03T12:33:32.264Z",
+            "link": "https://github.com/mohshbool/jira-task-reminder",
+            "images": [
+                {
+                    "url": "https://lh3.googleusercontent.com/I7MS_9k8NfHfF4AKPj-fudCNG08yJZZuI_VD-qvx_mbE4kZ-MH0qkC4TV1rH8Vj63PqlcSY2hwk=w640-h400-e365-rj-sc0x00ffffff"
+                }
+            ],
+            "id": "0aa3d1b5-bde3-4a23-ada2-2b3c796e0144",
+            "endDate": "2019-06-03"
         }
     ],
     "specific": {
         "basics": {
-            "visaSponsorship": true,
-            "personalDescription": "This is a longer description of me, of my backstory, my backyard, my backfire, my backend, my frontend and my friends."
+            "visaSponsorship": false,
+            "personalDescription": "My story started back in the ninth grade, when I fell upon Harvards' Introduction to Computer Science through edX and I've fallen in love with software development ever since!"
         },
         "dreamJob": {
             "locations": [
@@ -247,29 +167,22 @@
             ],
             "remoteFrequency": "regularly"
         },
-        "currentJob": {
-            "issues": { "boring_management": true, "boring_team": true }
-        },
-        "education": { "studiesLevel": 5 },
+        "currentJob": { "issues": { "boring_management": true, "boring_team": true } },
+        "education": { "studiesLevel": 0 },
         "work": {
             "contractTypes": ["permanent"],
-            "codingYears": 7,
-            "codingReason": "J'ai commencé à coder sur Amstrad dans ma cave et je n'ai jamais arrêté depuis",
+            "codingYears": 3,
+            "codingReason": "",
             "searchState": "activelySearching",
             "experienceYears": 0,
-            "codeExperienceYears": 1,
-            "otherExperienceYears": 1
+            "codeExperienceYears": 1.5,
+            "otherExperienceYears": 0
         },
-        "sound": {
-            "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge"
-        },
+        "sound": { "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge" },
         "interestedBy": "Angular, la blochain et les chatons."
     },
     "resumeCustomization": {
-        "imageHeader": {
-            "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp",
-            "alt": "Default Banner"
-        },
+        "imageHeader": { "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp", "alt": "Default Banner" },
         "cardsOrder": [
             { "type": "basics", "variant": 4 },
             { "type": "projects", "variant": 4 },
@@ -282,9 +195,48 @@
             { "type": "language", "variant": 4 },
             { "type": "soundtrack", "variant": 4 }
         ],
-        "fields": {
-            "work": {
-                "customDateFormat": "YYYY"
+        "fields": { "work": { "customDateFormat": "YYYY" } },
+        "theme": {
+            "palette": {
+                "primary": {
+                    "50": "#ececed",
+                    "100": "#d8d9da",
+                    "200": "#b2b3b5",
+                    "300": "#8b8d91",
+                    "400": "#65676c",
+                    "500": "#3e4147",
+                    "600": "#323439",
+                    "700": "#25272b",
+                    "800": "#191a1c",
+                    "900": "#0c0d0e",
+                    "contrastDefaultColor": "light"
+                },
+                "secondary": {
+                    "50": "#fffffc",
+                    "100": "#fffff9",
+                    "200": "#fffff2",
+                    "300": "#fffeec",
+                    "400": "#fffee5",
+                    "500": "#fffedf",
+                    "600": "#cccbb2",
+                    "700": "#999886",
+                    "800": "#666659",
+                    "900": "#33332d",
+                    "contrastDefaultColor": "light"
+                },
+                "tertiary": {
+                    "50": "#fcf8f0",
+                    "100": "#f9f1e1",
+                    "200": "#f2e3c3",
+                    "300": "#ecd6a5",
+                    "400": "#e5c887",
+                    "500": "#dfba69",
+                    "600": "#b29554",
+                    "700": "#86703f",
+                    "800": "#594a2a",
+                    "900": "#2d2515",
+                    "contrastDefaultColor": "light"
+                }
             }
         }
     }
