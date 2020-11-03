@@ -5,45 +5,46 @@
         "picture": "https://avatars0.githubusercontent.com/u/29310322?s=460&u=68af5834f534787b5732024b64b59b32b892f061&v=4",
         "email": "john.doe@mail.com",
         "phone": "(912) 555-4321",
-        "website": "http://johndoe.com",
+        "website": "https://github.com/mohshbool",
         "summary": "I'm a self-taught software engineer",
         "location": {
             "address": "2712 Broadway St",
             "postalCode": "CA 94115",
-            "city": "San Francisco, US, US, US",
+            "city": "San Francisco, US, US, US, US",
             "countryCode": "US",
             "region": "California",
-            "name": "San Francisco, US, US, US"
+            "name": "San Francisco, US, US, US, US"
         },
         "profiles": [{ "network": "Twitter", "username": "john", "url": "http://twitter.com/john" }]
     },
     "work": [
         {
-            "name": "Company 2 ",
-            "position": "Worker",
+            "name": "cg imagine + invent",
+            "position": "Full Stack Developer",
             "website": "http://company.com",
-            "startDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
+            "startDate": "2018-04-01",
+            "summary": "I worked as a Full-Stack Web Developer and a Mobile Application Developer while I was still in school as part of an unpaid internship",
+            "location": "Amman, Jordan",
+            "highlights": ["Started the company"],
+            "id": "126cf689-11de-42c9-b0bd-feb6ecd552e2",
+            "endDate": "2018-07-01",
+            "place": { "name": "Amman, Jordan" },
+            "stillEmployed": true,
+            "index": 0
         },
         {
-            "name": "What a nice office",
-            "position": "President",
+            "name": "We.The.Makers",
+            "position": "Software Engineer",
             "website": "http://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
-        },
-        {
-            "name": "What a nice experience",
-            "position": "Lead dev",
-            "website": "http://company.com",
-            "summary": "Description...",
-            "location": "Paris, France",
-            "highlights": ["Started the company"]
+            "startDate": "2019-08-01",
+            "endDate": "2019-09-01",
+            "summary": "Mobile Application Development, Front-end Web Design and Back-end Server Architecture",
+            "location": "Amman, Jordan",
+            "highlights": ["Started the company"],
+            "id": "a47e7998-5809-436c-b69a-fcd96266cc43",
+            "place": { "name": "Amman, Jordan" },
+            "stillEmployed": false,
+            "index": 1
         }
     ],
     "volunteer": [
@@ -58,22 +59,24 @@
     ],
     "education": [
         {
-            "institution": "ISEN",
-            "area": "Software Development",
-            "studyType": "Engineer Degree",
+            "institution": "Al-Jazeera Schools",
+            "area": "Scientific Stream with an average of 92.7",
+            "studyType": "Highschool Degree (Tawjihi)",
             "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
+            "endDate": "2020-01-01",
             "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
+            "courses": ["DB1101 - Basic SQL"],
+            "id": "6292238d-01b0-4010-aa51-1f67f1331966"
         },
         {
-            "institution": "Université d'artois",
-            "area": "",
-            "studyType": "",
+            "institution": "Jordan University of Science and Technology",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
             "startDate": "2011-01-01",
-            "endDate": "",
+            "endDate": "2020-01-01",
             "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
+            "courses": ["DB1101 - Basic SQL"],
+            "id": "f8d9fd76-75b6-440f-989d-526c8c7660ff"
         }
     ],
     "awards": [{ "title": "Award", "date": "2014-11-01", "awarder": "Company", "summary": "There is no spoon." }],
@@ -87,20 +90,50 @@
         }
     ],
     "skills": [
-        { "name": "Reactaaa", "level": "Master", "value": 100, "keywords": ["HTML", "CSS", "Javascript"] },
-        { "name": "Angular", "level": "Master", "value": 80, "keywords": ["HTML", "CSS", "Javascript"] },
-        { "name": "NodeJS", "level": "Master", "value": 40, "keywords": ["HTML", "CSS", "Javascript"] },
-        { "name": "Firebase", "level": "Master", "value": 60, "keywords": ["HTML", "CSS", "Javascript"] },
-        { "name": "Gmail", "level": "Master", "value": 20, "keywords": ["HTML", "CSS", "Javascript"] },
-        { "name": "K8S", "level": "Master", "value": 80, "keywords": ["HTML", "CSS", "Javascript"] }
+        { "name": "React Native", "index": 0, "value": 79, "id": "c3a79627-a9bc-4859-b7fe-88677ff22238" },
+        { "name": "React", "index": 1, "value": 56, "id": "9581ceb9-26dd-43c0-aeb5-3ab4e976695b" },
+        { "name": "Nest", "index": 2, "value": 23, "id": "4d88a0d3-4f4f-4b72-955b-fc43db508fde" },
+        { "name": "Firebase", "index": 3, "value": 81, "id": "1596fb16-7fa5-4b48-8b0a-cfceffc1ad9b" },
+        { "name": "Python", "index": 4, "value": 73, "id": "c17370a4-098d-4e0f-9f15-d933f66d7242" },
+        { "name": "Github", "index": 5, "value": 84, "id": "8bc1f9bc-1721-4622-be84-5757004aa9ba" },
+        { "name": "GraphQL", "index": 6, "value": 66, "id": "69feaf35-7a6b-4f8a-95da-09b093d22674" },
+        { "name": "Redux", "index": 7, "value": 79, "id": "c71cc0b5-92eb-4022-b2bd-d32bde65f1d6" }
     ],
-    "languages": [{ "language": "English", "value": 100, "fluency": "Native speaker" }],
+    "languages": [
+        {
+            "language": "English",
+            "value": 100,
+            "fluency": "Native speaker",
+            "id": "5e8d958e-2fec-4ccc-b73d-1d5b17d94e3d",
+            "index": 0
+        },
+        { "index": 1, "id": "42de4746-8bd2-4905-9039-dcf7b55d9815", "language": "Arabic", "value": 95 }
+    ],
     "interests": [
-        { "name": "Burritos", "gifUrl": "https://media.giphy.com/media/d8WjGORtSEWqc/giphy.gif" },
-        { "name": "Dogs", "gifUrl": "https://media.giphy.com/media/3o85xsGXVuYh8lM3EQ/giphy.gif" },
-        { "name": "Tendresse", "gifUrl": "https://media.giphy.com/media/EehnUUCH2JcwU/giphy.gif" },
-        { "name": "Something", "gifUrl": "https://media.giphy.com/media/xTiTnIuKP1BLsMTerS/giphy.gif" },
-        { "name": "J'aime faire de la course à pied et des randonnées en famille le weekend." }
+        {
+            "name": "Goofy Shows",
+            "gifUrl": "https://media.giphy.com/media/cBIooxvKerol2/giphy.gif",
+            "id": "bf6b2e56-e1e1-4039-b56a-0b958c9c7206",
+            "index": 0
+        },
+        {
+            "name": "Vaping",
+            "gifUrl": "https://media.giphy.com/media/kfXm0zl2CoBJE04JDj/giphy.gif",
+            "id": "7da183d8-2356-4db1-9701-8ae4bb7925b8",
+            "index": 1
+        },
+        {
+            "name": "Astroworld",
+            "gifUrl": "https://media.giphy.com/media/Y0GzquhmU03NpyOF42/giphy.gif",
+            "id": "ebf938af-c10e-42df-b8fe-72075dd1d676",
+            "index": 2
+        },
+        {
+            "name": "Basketball",
+            "gifUrl": "https://media.giphy.com/media/3DrHrnC0JMotPiopno/giphy.gif",
+            "id": "0be365b4-7179-4033-9e4b-79d441636d0d",
+            "index": 3
+        }
     ],
     "references": [{ "name": "Jane Doe", "reference": "Reference..." }],
     "projects": [
@@ -157,29 +190,25 @@
             "personalDescription": "My story started back in the ninth grade, when I fell upon Harvards' Introduction to Computer Science through edX and I've fallen in love with software development ever since!"
         },
         "dreamJob": {
-            "locations": [
-                { "name": "Valenciennes, France" },
-                { "name": "Lille, France" },
-                { "name": "Paris,France" },
-                { "name": "Paris,France" },
-                { "name": "Lille, France" },
-                { "name": "Valenciennes, France" }
-            ],
-            "remoteFrequency": "regularly"
+            "locations": [{ "name": "Amman, Jordan", "id": "fbfc1841-cf42-4dfb-92ca-9b2a7a8bb40e" }],
+            "remoteFrequency": "fullTime",
+            "perks": { "challenge": true, "salary": true, "responsabilities": true, "training": true }
         },
         "currentJob": { "issues": { "boring_management": true, "boring_team": true } },
         "education": { "studiesLevel": 0 },
         "work": {
-            "contractTypes": ["permanent"],
+            "contractTypes": ["freelance", "fixedTerm"],
             "codingYears": 3,
             "codingReason": "",
             "searchState": "activelySearching",
             "experienceYears": 0,
-            "codeExperienceYears": 1.5,
+            "codeExperienceYears": 1,
             "otherExperienceYears": 0
         },
-        "sound": { "embedUrl": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWl7MndYYxge" },
-        "interestedBy": "Angular, la blochain et les chatons."
+        "sound": {
+            "embedUrl": "https://open.spotify.com/embed/playlist/2Lo41AjzwjE3EUJbBxkGPf?si=nGqz_O7eQbSSSRMqH1AYPw"
+        },
+        "interestedBy": "Machine Learning, Internet of Things"
     },
     "resumeCustomization": {
         "imageHeader": { "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp", "alt": "Default Banner" },
