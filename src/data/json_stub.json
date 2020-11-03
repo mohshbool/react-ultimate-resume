@@ -6,16 +6,7 @@
         "email": "john.doe@mail.com",
         "phone": "(912) 555-4321",
         "website": "https://github.com/mohshbool",
-        "summary": "I'm a self-taught software engineer",
-        "location": {
-            "address": "2712 Broadway St",
-            "postalCode": "CA 94115",
-            "city": "San Francisco, US, US, US, US",
-            "countryCode": "US",
-            "region": "California",
-            "name": "San Francisco, US, US, US, US"
-        },
-        "profiles": [{ "network": "Twitter", "username": "john", "url": "http://twitter.com/john" }]
+        "summary": "I'm a self-taught software engineer"
     },
     "work": [
         {
@@ -47,16 +38,6 @@
             "index": 1
         }
     ],
-    "volunteer": [
-        {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "website": "http://organization.com/",
-            "endDate": "2013-01-01",
-            "summary": "Description...",
-            "highlights": ["Awarded 'Volunteer of the Month'"]
-        }
-    ],
     "education": [
         {
             "institution": "Al-Jazeera Schools",
@@ -77,16 +58,6 @@
             "gpa": "4.0",
             "courses": ["DB1101 - Basic SQL"],
             "id": "f8d9fd76-75b6-440f-989d-526c8c7660ff"
-        }
-    ],
-    "awards": [{ "title": "Award", "date": "2014-11-01", "awarder": "Company", "summary": "There is no spoon." }],
-    "publications": [
-        {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "website": "http://publication.com",
-            "summary": "Description..."
         }
     ],
     "skills": [
@@ -135,7 +106,6 @@
             "index": 3
         }
     ],
-    "references": [{ "name": "Jane Doe", "reference": "Reference..." }],
     "projects": [
         {
             "description": "Learn Quran is a hybrid platform for testing your knowledge in the Holy Quran!\n\n• Full-integration with Firebase’s Authentication, Database and Media Storage\n• Setup hosting on Firebase using FirebaseApp\n• Designed a responsive front-end using SASS inherited from Google’s Material Design\n• Collaborated with a UI/UX Engineer to deliver the best user experience\n• Built a smooth native-like animation system using Airbnb’s Lottie",
@@ -211,7 +181,9 @@
         "interestedBy": "Machine Learning, Internet of Things"
     },
     "resumeCustomization": {
-        "imageHeader": { "url": "https://cdn.filestackcontent.com/8I2wVnCRTFxypXRYLRsp", "alt": "Default Banner" },
+        "imageHeader": {
+            "url": "https://images.unsplash.com/photo-1505294399615-2479253a4990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        },
         "cardsOrder": [
             { "type": "basics", "variant": 4 },
             { "type": "projects", "variant": 4 },
