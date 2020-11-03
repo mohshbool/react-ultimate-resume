@@ -9,8 +9,8 @@ import { useMediaQuery } from '@material-ui/core';
 
 import { ShareLinks } from './share_links/share_links';
 
-import { ReactComponent as Logo } from '../../assets/icons/brands/welovedevs.svg';
 import { ReactComponent as GithubLogo } from '../../assets/icons/brands/github.svg';
+import { ReactComponent as Template } from '../../assets/icons/template.svg';
 
 import { styles } from './footer_styles';
 
@@ -28,19 +28,29 @@ const FooterComponent = () => {
     if (useSmallLayout) {
         return (
             <div className={cn(classes.container, useSmallLayout && classes.smallLayoutContainer)}>
+                <ShareLinks useSmallLayout />
                 <div className={classes.wldLogoGithubLogoContainer}>
-                    <a
-                        className={classes.logoLink}
-                        href="https://welovedevs.com"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <Logo className={classes.logo} />
-                    </a>
                     <Tooltip
                         title={
                             <FormattedMessage
-                                id="Footer.github.tooltip"
+                                id="Footer.github.tooltip.left"
+                                defaultMessage="Visit this page on GitHub"
+                            />
+                        }
+                    >
+                        <a
+                            className={classes.githubLink}
+                            href="https://github.com/mohshbool/react-ultimate-resume/tree/shbool"
+                            target="_bank"
+                            rel="noreferer noopener"
+                        >
+                            <GithubLogo className={classes.githubLogo} />
+                        </a>
+                    </Tooltip>
+                    <Tooltip
+                        title={
+                            <FormattedMessage
+                                id="Footer.github.tooltip.right"
                                 defaultMessage="Create your own developer profile!"
                             />
                         }
@@ -51,24 +61,35 @@ const FooterComponent = () => {
                             target="_bank"
                             rel="noreferer noopener"
                         >
-                            <GithubLogo className={classes.githubLogo} />
+                            <Template className={classes.githubLogo} />
                         </a>
                     </Tooltip>
                 </div>
-                <ShareLinks useSmallLayout />
             </div>
         );
     }
 
     return (
         <div className={classes.container}>
-            <a className={classes.logoLink} href="https://welovedevs.com" target="_blank" rel="noreferrer noopener">
-                <Logo className={classes.logo} />
-            </a>
+            <Tooltip
+                title={<FormattedMessage id="Footer.github.tooltip.left" defaultMessage="Visit this page on GitHub" />}
+            >
+                <a
+                    className={classes.githubLink}
+                    href="https://github.com/mohshbool/react-ultimate-resume/tree/shbool"
+                    target="_bank"
+                    rel="noreferer noopener"
+                >
+                    <GithubLogo className={classes.githubLogo} />
+                </a>
+            </Tooltip>
             <ShareLinks />
             <Tooltip
                 title={
-                    <FormattedMessage id="Footer.github.tooltip" defaultMessage="Create your own developer profile!" />
+                    <FormattedMessage
+                        id="Footer.github.tooltip.right"
+                        defaultMessage="Create your own developer profile!"
+                    />
                 }
             >
                 <a
@@ -77,7 +98,7 @@ const FooterComponent = () => {
                     target="_bank"
                     rel="noreferer noopener"
                 >
-                    <GithubLogo className={classes.githubLogo} />
+                    <Template className={classes.githubLogo} />
                 </a>
             </Tooltip>
         </div>
