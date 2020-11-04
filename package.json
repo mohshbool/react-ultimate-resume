@@ -126,8 +126,5 @@
         "*.+(ts|tsx)": [
             "prettier --loglevel=debug --write"
         ]
-    },
-    "engines": {
-        "node": "12.10"
     }
 }
