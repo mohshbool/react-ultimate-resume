@@ -28,7 +28,6 @@ const FooterComponent = () => {
     if (useSmallLayout) {
         return (
             <div className={cn(classes.container, useSmallLayout && classes.smallLayoutContainer)}>
-                <ShareLinks useSmallLayout />
                 <div className={classes.wldLogoGithubLogoContainer}>
                     <Tooltip
                         title={
@@ -47,6 +46,7 @@ const FooterComponent = () => {
                             <GithubLogo className={classes.githubLogo} />
                         </a>
                     </Tooltip>
+                    <ShareLinks useSmallLayout />
                     <Tooltip
                         title={
                             <FormattedMessage

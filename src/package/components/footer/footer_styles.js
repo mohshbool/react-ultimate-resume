@@ -49,9 +49,6 @@ export const styles = (theme) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            '& > $githubLink': {
-                marginLeft: spacing * 3
-            },
             [QUERY_BETWEEN_SMALL_EXTRA_SMALL]: {
                 width: '100%',
                 marginBottom: spacing * 4
